@@ -1,0 +1,32 @@
+fix client update
+_____________________________________________________________________________________________________
+
+- client_panorama.dll
+
+change
+
++ client.dll
+
+_____________________________________________________________________________________________________
+
+
+
+fix csgo structs
+_____________________________________________________________________________________________________
+
+IsWeapon = 165;
+IsPlayer = 157;
+IsReloading = client_panorama.dll("C6 87 ? ? ? ? ? 8B 06 8B CE FF 90"), offset x 2;
+GetInaccuracy = 482; + this return!! 
+GetSpread = 452;
+UpdateAccuracyPenalty = 483;
+GetNumAnimOverlays = 0x298C;
+GetAnimOverlays = 0x2980;
+m_nMoveType = 0x25C; ("default")
+SetGloveModelIndex = 75;
+SendViewModelMatchingSequence = 246;
+
+
+*
+return !IsReloading() && m_iClip1() > 0;
+*
