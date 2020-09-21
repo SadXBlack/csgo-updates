@@ -30,3 +30,8 @@ SendViewModelMatchingSequence = 246;
 *
 return !IsReloading() && m_iClip1() > 0;
 *
+
+_____________________________________________________________________________________________________
+
+
+g_GlobalVars =   **(CGlobalVarsBase***)(Utils::PatternScan("client.dll", "A1 ? ? ? ? 5E 8B 40 10") + 1); // LP= * *? ** A1 A2 A3 5E
